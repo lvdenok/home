@@ -43,20 +43,10 @@
             font-size: 1rem;
             line-height: 1.42857;
             overflow-x: hidden;
-            background: inherit;
+            background: url('./images/background5.jpg') no-repeat center center fixed;
+            background-size: cover;
             tab-size: 4;
             position: relative;
-        }
-        .kurobbs-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-            object-fit: cover;
-            filter: blur(20px) brightness(0.3);
-            transition: filter 0.3s, transform 0.3s;
         }
         .center-content {
             min-height: 100vh;
@@ -203,7 +193,6 @@
 </head>
 
 <body class='typora-export os-windows'>
-    <img class="kurobbs-bg" src="/images/background5.jpg" alt="背景" />
     <div class="center-content">
         <div class='typora-export-content'>
             <div id='write' class=''>
