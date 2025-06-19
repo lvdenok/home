@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <style type='text/css'>
+        html {
+            overflow-x: initial !important;
+        }
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --select-text-bg-color: #B5D6FC;
+            --select-text-font-color: auto;
+            --monospace: "Lucida Console", Consolas, "Courier", monospace;
+            --title-bar-height: 20px;
+        }
+        .mac-os-11 {
+            --title-bar-height: 28px;
+        }
+        html {
+            font-size: 14px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            white-space: pre-wrap;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            min-height: 100vh;
+            min-width: 100vw;
+            font-size: 1rem;
+            line-height: 1.42857;
+            overflow-x: hidden;
+            background: inherit;
+            tab-size: 4;
+            position: relative;
+        }
+        .kurobbs-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            object-fit: cover;
+            filter: blur(20px) brightness(0.3);
+            transition: filter 0.3s, transform 0.3s;
+        }
+        .center-content {
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .typora-export-content {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem 3rem;
+            max-width: 900px;
+            width: 100%;
+        }
+        iframe {
+            margin: auto;
+        }
+        a.url {
+            word-break: break-all;
+        }
+        a:active,
+        a:hover {
+            outline: 0px;
+        }
+        .in-text-selection,
+        ::selection {
+            text-shadow: none;
+            background: var(--select-text-bg-color);
+            color: var(--select-text-font-color);
+        }
+        #write {
+            margin: 0px auto;
+            height: auto;
+            width: inherit;
+            word-break: normal;
+            overflow-wrap: break-word;
+            position: relative;
+            white-space: normal;
+            overflow-x: visible;
+            padding-top: 36px;
+        }
+        #write.first-line-indent p {
+            text-indent: 2em;
+        }
+        #write.first-line-indent li p,
+        #write.first-line-indent p * {
+            text-indent: 0px;
+        }
+        #write.first-line-indent li {
+            margin-left: 2em;
+        }
+        .for-image #write {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        body.typora-export {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .typora-export .footnote-line,
+        .typora-export li,
+        .typora-export p {
+            white-space: pre-wrap;
+        }
+        .typora-export .task-list-item input {
+            pointer-events: none;
+        }
+        @media screen and (max-width: 500px) {
+            body.typora-export {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            #write {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        #write li>figure:last-child {
+            margin-bottom: 0.5rem;
+        }
+        #write ol,
+        #write ul {
+            position: relative;
+        }
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+            image-orientation: from-image;
+        }
+        button,
+        input,
+        select,
+        textarea {
+            color: inherit;
+            font: inherit;
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            line-height: normal;
+            padding: 0px;
+        }
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+        #write h1,
+        #write h2,
+        #write h3,
+        #write h4,
+        #write h5,
+        #write h6,
+        #write p,
+        #write pre {
+            width: inherit;
+        }
+        #write h1,
+        #write h2,
+        #write h3,
+        #write h4,
+        #write h5,
+        #write h6,
+        #write p {
+            position: relative;
+        }
+        p {
+            line-height: inherit;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            break-after: avoid-page;
+            break-inside: avoid;
+            orphans: 4;
+        }
+        /* ... 省略部分样式 ... */
+    </style>
+    <title>同时登录库街区方法</title>
+</head>
+
+<body class='typora-export os-windows'>
+    <img class="kurobbs-bg" src="/images/background5.jpg" alt="背景" />
+    <div class="center-content">
+        <div class='typora-export-content'>
+            <div id='write' class=''>
+                <h1 id='同时登录库街区方法'><span>同时登录库街区方法 </span></h1>
+                <p><span>如果已有token和did（从其他bot获取）参见最后一步</a></p>
+                
+                <h2 id='1-下载安装工具'><span>1 下载安装工具</span></h2>
+                <h4 id='本工具为开源工具软件代码公开安全性较好'><span>本工具为开源工具，软件代码公开，安全性较好</span></h4>
+                <p><span>如果会使用github：</span><a href='https://github.com/wanghongenpin/proxypin/releases'><span>Releases · wanghongenpin/proxypin</span></a></p>
+                <hr />
+                <h4 id='如果无法从github下载'><span>如果无法从github下载：</span></h4>
+                <p><span>苹果用户：</span><a href='https://apps.apple.com/app/proxypin/id6450932949' target='_blank' class='url'>https://apps.apple.com/app/proxypin/id6450932949</a></p>
+                <p><span>安卓用户：</span><a href='https://xn--ntsp09fr3m.com/ProxyPin-android.apk' target='_blank' class='url'>https://xn--ntsp09fr3m.com/ProxyPin-android.apk</a></p>
+                <h2 id='2-进行抓包'><span>2 进行抓包</span></h2>
+                <h4 id='在软件中设置打开https代理并将库街区添加白名单'><span>在软件中设置，打开https代理并将库街区添加白名单</span></h4>
+                <p><img src="./bbsimgs/30627a5751f44a6590f51693168603a2.jpeg" alt="30627a5751f44a6590f51693168603a2" style="zoom:33%;" /></p>
+                <p><img src="./bbsimgs/image-20250606141820923.png" alt="image-20250606141820923" style="zoom:67%;" /></p>
+                <p><img src="./bbsimgs/image-20250606141829074.png" alt="image-20250606141829074" style="zoom:67%;" /></p>
+                <p>&nbsp;</p>
+                <h4 id='然后登录库街区如果已经登录可以跳过）'><span>然后登录库街区（如果已经登录可以跳过）</span></h4>
+                <h4 id='然后点击右下角开始按钮必须在已经库街区登录状态下'><span>然后点击右下角开始按钮，必须在已经库街区登录状态下</span></h4>
+                <p><img src="./bbsimgs/image-20250606141852752.png" referrerpolicy="no-referrer" alt="image-20250606141852752"></p>
+                <h4 id='在库街区点开自己的账号信息可以看到成就数量的那个界面）后立即退出库街区'><span>在库街区点开自己的账号信息（可以看到成就数量的那个界面）后立即退出库街区。</span></h4>
+                <h4 id='回到软件点开最上面的结果大小约为50kb'><span>回到软件，点开最上面的结果，大小约为50kb</span></h4>
+                <p><img src="./bbsimgs/cd9ce9de20340b5e683b566255857920.jpeg" alt="cd9ce9de20340b5e683b566255857920" style="zoom: 33%;" /></p>
+                <h4 id='点开第二项找到did字段和token字段'><span>点开第二项，找到did字段和token字段</span></h4>
+                <p><span>did字段和token字段大致格式如图。did有时可能存在devCode字段中。</span></p>
+                <p><img src="./bbsimgs/f781b82585b35559ba080065852b16a4.jpeg" alt="f781b82585b35559ba080065852b16a4" style="zoom:33%;" /></p>
+                <h2 id='3-Bot登录'><span>3 Bot登录</span></h2>
+                <h4><span>最后，在bot登录：ww添加token xxtokenxx，xxdidxx，先token后did。该步骤相当于绑定设备。不要输入额外的东西。逗号半角无所谓</span></h4>
+                <p><img src="./bbsimgs/3fca06bafe9beb9ecf4e921cc00ed41d.jpg" alt="3fca06bafe9beb9ecf4e921cc00ed41d" style="zoom:50%;" /></p>
+                <h2 id='解释'><span>解释</span></h2>
+                <p><span>原先网页版库街区和h5方式共享token，可能是kl在某一时期具有开发官方h5小程序的计划，用户可以抓取网页token进行查询（原来的ww登录方式）。现kl关闭该接口，故只能使用库街区app的凭据进行查询，这也是一般用户游戏外能够看到角色面板的唯一方式。登录只允许存在一处，但通过抓包可以从app中提取凭据实现同时登录。</span></p>
+                <p><span>理论上一次token登录可以坚持到换手机。</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
